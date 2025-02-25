@@ -64,6 +64,12 @@ const questions = [
     correct: 'b) Aloe vera'
   },
   {
+    question: 'True or False: Trimming your hair makes it grow faster.',
+    options: ['a) True ',
+      'b) False'],
+    correct: 'b) False'
+  },
+  {
     question: 'Which hair porosity type absorbs moisture quickly but loses it fast?',
     options: ['a) Low porosity',
       'b) Medium porosity',
@@ -112,14 +118,6 @@ const questions = [
     correct: 'b) ½ inch (1.2 cm)'
   },
   {
-    question: 'What percentage of hair is made up of keratin protein?',
-    options: ['a) 30%',
-      'b) 50%',
-      'c) 80%',
-      'd) 95%'],
-    correct: 'd) 95%'
-  },
-  {
     question: 'Which vitamin is often linked to hair loss prevention?',
     options: ['a) Vitamin A',
       'b) Vitamin B7 (Biotin)',
@@ -128,27 +126,7 @@ const questions = [
     correct: 'b) Vitamin B7 (Biotin)'
   },
   {
-    question: 'Which DIY ingredient can strengthen hair and promote shine?',
-    options: ['a) Yogurt',
-      'b) Lemon juice',
-      'c) Baking soda',
-      'd) Petroleum jelly'],
-    correct: 'a) Yogurt'
-  },
-  {
     question: 'True or False: Drinking more water can help with hair hydration.',
-    options: ['a) True ',
-      'b) False'],
-    correct: 'b) False'
-  },
-  {
-    question: 'True or False: Hair grows back thicker after shaving.',
-    options: ['a) True ',
-      'b) False'],
-    correct: 'a) True'
-  },
-  {
-    question: 'True or False: Trimming your hair makes it grow faster.',
     options: ['a) True ',
       'b) False'],
     correct: 'b) False'
@@ -160,14 +138,6 @@ const questions = [
       'c) Liquid → Cream → Oil',
       'd) Lotion → Castor oil → Olive oil'],
     correct: 'c) Liquid → Cream → Oil'
-  },
-  {
-    question: 'Which part of the hair is responsible for growth?',
-    options: ['a) Hair cuticle',
-      'b) Hair shaft',
-      'c) Hair follicle',
-      'd) Hair cortex'],
-    correct: 'c) Hair follicle'
   },
   {
     question: 'How often should you clarify your hair to remove product buildup?',
@@ -189,6 +159,7 @@ const questions = [
 
 let currentQuestionIndex = 0;
 let score = 0;
+let selectedAnswers = new Array(questions.length).fill(null);
 
 function loadQuestion() {
   document.getElementById("question").textContent = questions[currentQuestionIndex].question;
@@ -199,6 +170,14 @@ function loadQuestion() {
     const btn = document.createElement("button");
     btn.textContent = option;
     btn.classList.add("option");
+
+    if (selectedAnswers[currentQuestionIndex]) {
+      btn.disabled = true; // Disable option if already chosen
+      if (option === selectedAnswers[currentQuestionIndex].option) {
+        btn.classList.add(selectedAnswers[currentQuestionIndex].isCorrect ? "correct" : "wrong");
+      }
+    }
+
     btn.onclick = () => checkAnswer(btn, option);
     optionsContainer.appendChild(btn);
   });
@@ -213,13 +192,13 @@ function loadQuestion() {
 
 function checkAnswer(btn, option) {
   const correctAnswer = questions[currentQuestionIndex].correct;
-  document.querySelectorAll(".option").forEach(button => button.disabled = true);
-  if (option === correctAnswer) {
-    btn.classList.add("correct");
-    score++;
-  } else {
-    btn.classList.add("wrong");
-  }
+    const isCorrect = option === correctAnswer;
+    btn.classList.add(isCorrect ? "correct" : "wrong");
+  
+    // Store the selected answer & correctness
+    selectedAnswers[currentQuestionIndex] = { option, isCorrect };
+  
+    if (isCorrect) score++;
 }
 
 document.getElementById("next").onclick = () => {

@@ -73,6 +73,11 @@ body {
   border: none;
 }
 
+.btn img {
+  width: 35px;
+  height: 35px;
+}
+
 .quiz-status {
   color: #584B49;
   font-size: 42px;
@@ -96,7 +101,7 @@ body {
 }
 
 /*hair image*/
-.right-side {
+.right-side, .left-side {
   width:230px;
 }
 
