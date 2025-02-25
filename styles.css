@@ -21,20 +21,38 @@ body {
   color: white;
 }
 
+/*hair image*/
+.rightimg, .leftimg {
+  width:230px;
+  position: absolute;
+  top: 70px;
+}
+
+.rightimg { 
+  right: 50px;
+}
+
+.leftimg {
+ left: 20px;
+}
+
 .content {
-  margin-left: 26px;
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .quiz-container {
   width: 130vh;
   padding: 20px;
-  
+  top: -20px;
+  left: 45px;
 }
 
 .hair-question {
   font-family: 'Playfair Display';
-  font-size: 32px;
+  font-size: 30px;
 }
 
 .option {
@@ -45,7 +63,7 @@ body {
   color: #584B49;
   border: none;
   border: 1px gray solid;
-  font-size: 22px;
+  font-size: 19px;
   border-radius: 25px;
   cursor: pointer;
 }
@@ -100,13 +118,3 @@ body {
   margin-top: 200px;
 }
 
-/*hair image*/
-.right-side, .left-side {
-  width:230px;
-}
-
-.right-cont {
-  position: absolute;
-  top: 70px;
-  right: 50px;
-}
