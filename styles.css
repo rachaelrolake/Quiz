@@ -2,7 +2,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   background: beige;
-  
+
 }
 
 .header {
@@ -22,9 +22,9 @@ body {
 }
 
 /*hair image*/
-.rightimg{
+.rightimg {
   position: absolute;
-  width:25%;
+  width: 25%;
   right: 50px;
   top: 155px;
 }
@@ -35,7 +35,7 @@ body {
   margin-left: 15px;
   display: flex;
   align-items: center;
-  
+
 }
 
 .quiz-container {
@@ -43,7 +43,7 @@ body {
 }
 
 .hair-question {
-  font-family: 'Playfair Display', Georgia ;
+  font-family: 'Playfair Display', Georgia;
   font-weight: 800;
   font-size: 30px;
   color: #4e4241;
@@ -124,7 +124,7 @@ body {
 
 
 @media (max-width: 740px) {
-  .rightimg  {
+  .rightimg {
     display: none;
   }
 
@@ -132,8 +132,8 @@ body {
     margin-left: 0px;
   }
 
-  
-  
+
+
 }
 
 
@@ -145,8 +145,4 @@ body {
   }
 }
 
-@media (min-width: 1000px) {
-  
-}
-
-
+@media (min-width: 1000px) {}
