@@ -151,7 +151,7 @@ const questions = [
     question: 'Drinking more water can help with hair hydration.',
     options: ['a) True ',
       'b) False'],
-    correct: 'b) False',
+    correct: 'a) True',
     imageLeft: 'images/messy bun-amico.png',
     imageRight: 'images/Curly hair-rafiki.png'
   },

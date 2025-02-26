@@ -124,13 +124,13 @@ body {
 
 @media (max-width: 600px) {
   .rightimg, .leftimg {
-    visibility: hidden;
+    display: none;
   }
 }
 
 @media (max-width: 750px) {
   .rightimg, .leftimg {
-    visibility: hidden;
+    display: none;
   }
 }
 
