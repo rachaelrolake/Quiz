@@ -5,7 +5,7 @@ const questions = [
       'b) To reduce matting, tangling & breakage',
       'c) To make hair shinier',
       'd) To prevent dandruff'],
-    correct: 'b) To keep hair soft and reduce breakage',
+    correct: 'b) To reduce matting, tangling & breakage',
     imageLeft: 'images/messy bun-cuate.png',
     imageRight: 'images/Hair spray-bro.png'
   },
