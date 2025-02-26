@@ -39,10 +39,7 @@ body {
 }
 
 .quiz-container {
- 
   padding: 20px;
-  top: -20px;
-  left: 45px;
 }
 
 .hair-question {
@@ -131,15 +128,17 @@ body {
     display: none;
   }
 
+  .content {
+    margin-left: 0px;
+  }
+
+  .quiz-container {
+    padding: 12px;
+  }
   
 }
 
-@media (max-width: 768px) {
-  .rightimg {
-    position: absolute;
-    top: 05px;
-  }
-}
+
 
 @media (min-width: 751px) and (max-width: 999px) {
   .rightimg {
