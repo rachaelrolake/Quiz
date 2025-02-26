@@ -16,7 +16,7 @@ body {
 
 .name {
   font-family: 'Playfair Display', Georgia;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 37px;
   color: white;
 }
@@ -47,7 +47,9 @@ body {
 
 .hair-question {
   font-family: 'Playfair Display', Georgia ;
+  font-weight: 800;
   font-size: 30px;
+  color: #4e4241;
 }
 
 .option {
@@ -104,7 +106,7 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.footer {
+/* .footer {
   background-color: #8f7b558e;
   height: 70px;
   display: flex;
@@ -121,7 +123,7 @@ body {
   color: white;
   font-size: 16px;
   font-family: Arial;
-}
+} */
 
 
 @media (max-width: 600px) {
