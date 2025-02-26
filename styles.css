@@ -2,7 +2,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   background: beige;
-  height: 100vh;
+  
 }
 
 .header {
@@ -22,17 +22,9 @@ body {
 }
 
 /*hair image*/
-.rightimg, .leftimg {
-  width:230px;
+.rightimg{
   position: absolute;
-}
-
-.leftimg {
-  left: 20px;
-  top: 85px;
- }
-
-.rightimg { 
+  width:25%;
   right: 50px;
   top: 155px;
 }
@@ -40,21 +32,21 @@ body {
 
 
 .content {
+  margin-left: 15px;
   display: flex;
-  justify-content: center;
   align-items: center;
   
 }
 
 .quiz-container {
-  width: 120vh;
+ 
   padding: 20px;
   top: -20px;
   left: 45px;
 }
 
 .hair-question {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', Georgia ;
   font-size: 30px;
 }
 
@@ -92,6 +84,7 @@ body {
 .btn {
   cursor: pointer;
   border: none;
+  background: transparent;
 }
 
 .btn img {
@@ -112,30 +105,45 @@ body {
 }
 
 .footer {
-  background-color: #8F7B55;
-  color: white;
+  background-color: #8f7b558e;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+}
+
+.note {
+  color: white;
+  font-size: 16px;
+  font-family: Arial;
 }
 
 
 @media (max-width: 600px) {
-  .rightimg, .leftimg {
+  .rightimg  {
     display: none;
   }
+
+  
 }
 
-@media (max-width: 750px) {
-  .rightimg, .leftimg {
-    display: none;
+@media (max-width: 768px) {
+  .rightimg {
+    position: absolute;
+    top: 05px;
   }
 }
 
 @media (min-width: 751px) and (max-width: 999px) {
-  
+  .rightimg {
+    position: absolute;
+    top: 205px;
+  }
 }
 
 @media (min-width: 1000px) {

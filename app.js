@@ -2,11 +2,10 @@ const questions = [
   {
     question: 'What is the purpose of sleeping with a silk/satin bonnet?',
     options: ['a) To make hair grow faster',
-      'b) To reduce matting, tangling & breakage',
+      'b) To reduce tangling & breakage',
       'c) To make hair shinier',
       'd) To prevent dandruff'],
-    correct: 'b) To reduce matting, tangling & breakage',
-    imageLeft: 'images/messy bun-cuate.png',
+    correct: 'b) To reduce tangling & breakage',
     imageRight: 'images/Hair spray-bro.png'
   },
   {
@@ -16,7 +15,6 @@ const questions = [
       'c) Curling wand',
       'd) Crimping iron'],
     correct: 'b) Blow dryer with diffuser',
-    imageLeft: 'images/hairdresser team-cuate.png',
     imageRight: 'images/hairdresser team-amico.png'
   },
   {
@@ -26,7 +24,6 @@ const questions = [
       'c) Petroleum jelly',
       'd) Baby oil'],
     correct: 'b) Jamaican black castor oil',
-    imageLeft: 'images/messy bun-pana.png',
     imageRight: 'images/messy bun-rafiki.png'
   },
   {
@@ -36,7 +33,6 @@ const questions = [
       'c) Loose afro',
       'd) Ponytail'],
     correct: 'b) Cornrows',
-    imageLeft: 'images/Curly hair-pana1.png',
     imageRight: 'images/Curly hair-bro.png'
   },
   {
@@ -46,7 +42,6 @@ const questions = [
       'c) Hair looks shinier than usual',
       'd) Hair grows faster'],
     correct: 'b) Hair feels dry, brittle, and snaps easily',
-    imageLeft: 'images/Hair-pulling disorder-bro.png',
     imageRight: 'images/Hair-pulling disorder-amico.png'
   },
   {
@@ -56,7 +51,6 @@ const questions = [
       'c) Exfoliate, cleanse, and moisturize when needed',
       'd) Avoid touching it'],
     correct: 'c) Exfoliate, cleanse, and moisturize when needed',
-    imageLeft: 'images/Curly hair-rafiki.png',
     imageRight: 'images/Curly hair-pana.png'
   },
   {
@@ -66,7 +60,6 @@ const questions = [
       'c) Beeswax',
       'd) Jojoba oil'],
     correct: 'b) Aloe vera',
-    imageLeft: 'images/messy bun-bro.png',
     imageRight: 'images/aloe vera-bro.png'
   },
   {
@@ -74,7 +67,6 @@ const questions = [
     options: ['a) True ',
       'b) False'],
     correct: 'b) False',
-    imageLeft: 'images/Hairdresser-pana.png',
     imageRight: 'images/hairdresser team-broq.png'
   },
   {
@@ -84,7 +76,6 @@ const questions = [
       'c) High porosity',
       'd) All hair types'],
     correct: 'c) High porosity',
-    imageLeft: 'images/messy bun-rafiki.png',
     imageRight: 'images/hairdresser team-pana.png'
   },
   {
@@ -94,7 +85,6 @@ const questions = [
       'c) Looks dull but feels soft',
       'd) Shrinks more than usual'],
     correct: 'a) Feels mushy and limp',
-    imageLeft: 'images/Hairdresser-cuate.png',
     imageRight: 'images/Hair-pulling disorder-cuate.png'
   },
   {
@@ -104,7 +94,6 @@ const questions = [
       'c) Applying gel or curl cream on wet hair using raking or shingling',
       'd) Blow-drying on high heat'],
     correct: 'c) Applying gel or curl cream on wet hair using raking or shingling',
-    imageLeft: 'images/Hair spray-pana.png',
     imageRight: 'images/women in hair salon-cuate.png'
   },
   {
@@ -114,7 +103,6 @@ const questions = [
       'c) They make hair grow faster',
       'd) They stop shrinkage'],
     correct: 'b) They reduce manipulation and breakage',
-    imageLeft: 'images/Hairdresser-pana.png',
     imageRight: 'images/Hair-pulling disorder-bro.png'
   },
   {
@@ -124,7 +112,6 @@ const questions = [
       'c) Avoid washing the style',
       'd) Only oil the scalp'],
     correct: 'b) Spray a water-based moisturizer and seal with oil',
-    imageLeft: 'images/Hair spray-pana.png',
     imageRight: 'images/Hair spray-amico.png'
   },
   {
@@ -134,7 +121,6 @@ const questions = [
       'c) 1 inch (2.5 cm)',
       'd) 2 inches (5 cm)'],
     correct: 'b) ½ inch (1.2 cm)',
-    imageLeft: 'images/Barber-bro.png',
     imageRight: 'images/Depilation-bro.png'
   },
   {
@@ -144,15 +130,13 @@ const questions = [
       'c) Vitamin C',
       'd) Vitamin D'],
     correct: 'b) Vitamin B7 (Biotin)',
-    imageLeft: 'images/women in hair salon-bro.png',
     imageRight: 'images/women in hair salon-rafiki.png'
   },
   {
     question: 'Drinking more water can help with hair hydration.',
-    options: ['a) True ',
+    options: ['a) True',
       'b) False'],
     correct: 'a) True',
-    imageLeft: 'images/messy bun-amico.png',
     imageRight: 'images/Curly hair-rafiki.png'
   },
   {
@@ -162,7 +146,6 @@ const questions = [
       'c) Liquid → Cream → Oil',
       'd) Lotion → Castor oil → Olive oil'],
     correct: 'c) Liquid → Cream → Oil',
-    imageLeft: 'images/women in hair salon-rafiki.png',
     imageRight: 'images/women in hair salon-pana.png'
   },
   {
@@ -172,7 +155,6 @@ const questions = [
       'c) Every 2-4 weeks',
       'd) Never'],
     correct: 'c) Every 2-4 weeks',
-    imageLeft: 'images/Curly hair-pana1.png',
     imageRight: 'images/Hair spray-bro.png'
   },
 
@@ -187,7 +169,6 @@ function loadQuestion() {
   const optionsContainer = document.getElementById("options");
   optionsContainer.innerHTML = "";
 
-  document.querySelector(".left-side").src = questions[currentQuestionIndex].imageLeft;
   document.querySelector(".right-side").src = questions[currentQuestionIndex].imageRight;
 
   questions[currentQuestionIndex].options.forEach(option => {
