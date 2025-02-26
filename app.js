@@ -1,18 +1,8 @@
 const questions = [
   {
-    question: 'Which of these is a protective style?',
-    options: ['a) Silk press',
-      'b) Cornrows',
-      'c) Loose afro',
-      'd) Ponytail'],
-    correct: 'b) Cornrows',
-    imageLeft: 'images/Curly hair-pana1.png',
-    imageRight: 'images/Curly hair-bro.png'
-  },
-  {
     question: 'What is the purpose of sleeping with a silk/satin bonnet?',
     options: ['a) To make hair grow faster',
-      'b) To keep hair soft and reduce breakage',
+      'b) To reduce matting, tangling & breakage',
       'c) To make hair shinier',
       'd) To prevent dandruff'],
     correct: 'b) To keep hair soft and reduce breakage',
@@ -30,7 +20,7 @@ const questions = [
     imageRight: 'images/hairdresser team-amico.png'
   },
   {
-    question: 'Which of these oils is best for scalp massages to promote hair growth?',
+    question: 'Which of these oils is best for scalp massages for hair growth?',
     options: ['a) Coconut oil',
       'b) Jamaican black castor oil',
       'c) Petroleum jelly',
@@ -38,6 +28,16 @@ const questions = [
     correct: 'b) Jamaican black castor oil',
     imageLeft: 'images/messy bun-pana.png',
     imageRight: 'images/messy bun-rafiki.png'
+  },
+  {
+    question: 'Which of these is a protective style?',
+    options: ['a) Silk press',
+      'b) Cornrows',
+      'c) Loose afro',
+      'd) Ponytail'],
+    correct: 'b) Cornrows',
+    imageLeft: 'images/Curly hair-pana1.png',
+    imageRight: 'images/Curly hair-bro.png'
   },
   {
     question: 'What is the biggest sign of protein overload in hair?',
@@ -78,14 +78,14 @@ const questions = [
     imageRight: 'images/hairdresser team-broq.png'
   },
   {
-    question: 'Which hair porosity type absorbs moisture quickly but loses it fast?',
+    question: 'Which hair porosity absorbs moisture quickly but loses it fast?',
     options: ['a) Low porosity',
       'b) Medium porosity',
       'c) High porosity',
       'd) All hair types'],
     correct: 'c) High porosity',
-    imageLeft: 'images/Fire hair-rafiki.png',
-    imageRight: 'images/Fire hair-bro.png'
+    imageLeft: 'images/messy bun-rafiki.png',
+    imageRight: 'images/hairdresser team-pana.png'
   },
   {
     question: 'What is a sign that your hair is over-moisturized (hygral fatigue)?',
